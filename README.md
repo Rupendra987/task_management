@@ -1,8 +1,44 @@
-# Getting Started with Create React App
+# This is a simple Task Management Application built with React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Task Management Application built as part of the Frontend Developer Assessment for RegisterKaro. The application allows users to manage tasks with features like creating, updating, deleting, sorting, and filtering tasks.
 
-## Available Scripts
+## Features 
+- Add, Update, and Delete Tasks
+- Mark Tasks as Complete or Incomplete
+- Filter Tasks by status (All, Completed, Incomplete).
+- Sort Tasks by creation date.
+- Responsive Design: Optimized for mobile and desktop.
+- Routing: Includes a Task Details page displaying task information in a table format.
+- Persistence: Tasks are stored in local storage for data retention.
+
+🚀 ## Live Demo
+The application is deployed and can be accessed at: https://taskmanager987.netlify.app/
+
+
+## Setup Instructions
+
+1. Clone the repository:
+   git clone https://github.com/Rupendra987/task_management.git
+   cd task_management_app
+2. Install dependencies:
+  npm install
+3. Start the application:
+  npm start   
+
+## Tools and Libraries
+
+1. Frontend: React.js, React Router, PropTypes
+2. Styling: CSS (Responsive Design)
+3. State Management: React's useState and useEffect hooks
+4. Testing: Jest and React Testing Library
+
+ ## Thought Process
+ 
+ State Management: Tasks are managed using React's useState and updated dynamically on user actions.
+ Component Design: Modular components ensure reusability and maintainability.
+ Routing: React Router is used to navigate between the Home Page and Task Detail Page.
+ Responsiveness: CSS ensures the app works seamlessly across devices.
+ Code Quality: PropTypes validates props to prevent runtime errors.
 
 In the project directory, you can run:
 
