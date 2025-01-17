@@ -20,10 +20,11 @@ The application is deployed and can be accessed at: https://taskmanager987.netli
 
 1. Clone the repository:
    git clone https://github.com/Rupendra987/task_management.git
+
    cd task_management_app
-2. Install dependencies:
+3. Install dependencies:
   npm install
-3. Start the application:
+4. Start the application:
   npm start   
 
 ## Tools and Libraries
