@@ -24,9 +24,12 @@ The application is deployed and can be accessed at: https://taskmanager987.netli
 
    cd task_management_app
 3. Install dependencies:
-  npm install
-4. Start the application:
-  npm start   
+
+   npm install
+   
+6. Start the application:
+
+   npm start   
 
 ## Tools and Libraries
 
