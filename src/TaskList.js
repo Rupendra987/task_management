@@ -7,7 +7,7 @@ function TaskList({ tasks, updateTask, deleteTask }) {
     <ul>
       {tasks.map((task) => (
         <li key={task.id} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <input type="checkbox" value={task?.completed} onClick={() => updateTask({ ...task, completed: !task.completed })} />
+          <input type="checkbox" defaultChecked={task?.completed} value={task?.completed} onClick={() => updateTask({ ...task, completed: !task.completed })} />
             {/* {task.completed ? "Mark Incomplete" : "Mark Complete"} */}
           {/* </button> */}
           <Link to={`/task/${task.id}`}><span>{task.title}</span></Link>
