@@ -11,7 +11,8 @@ This is a Task Management Application built as part of the Frontend Developer As
 - Routing: Includes a Task Details page displaying task information in a table format.
 - Persistence: Tasks are stored in local storage for data retention.
 
-🚀 ## Live Demo
+## Live Demo 🚀 
+
 The application is deployed and can be accessed at: https://taskmanager987.netlify.app/
 
 
