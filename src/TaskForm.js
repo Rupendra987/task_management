@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './TaskForm.css'
 import PropTypes from "prop-types";
 
 function TaskForm({ addTask }) {
@@ -20,7 +21,7 @@ function TaskForm({ addTask }) {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <button type="submit">Add Task</button>
+      <button type="submit" disabled={!title} className="AddTask">Add Task</button>
     </form>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './HomePage.css'
 import TaskList from "../TaskList";
 import TaskForm from "../TaskForm";
 
@@ -25,7 +26,7 @@ function HomePage() {
     };
 
     //Filter task logic
-    const setFilteredValue = () => {
+    const FilteredValue = () => {
         if (filterValue === 'Incomplete') {
             let value = tasks.filter((task) => task.completed == false)
             if (sortType === 'ASC') {
@@ -55,33 +56,35 @@ function HomePage() {
 
     useEffect(() => {
         localStorage.setItem('data', JSON.stringify(tasks))
-        setFilteredValue()
+        FilteredValue()
     }, [tasks])
 
     useEffect(() => {
-        setFilteredValue()
+        FilteredValue()
     }, [filterValue])
 
     useEffect(() => {
-        setFilteredValue()
+        FilteredValue()
     }, [sortType])
 
     return (
         <div>
             <h1>Task Management</h1>
             <TaskForm addTask={addTask} />
-            <div>
-                <button onClick={() => { setFilterValue('All') }}>All</button>
-                <button onClick={() => { setFilterValue('Incomplete') }}>Incomplete</button>
-                <button onClick={() => { setFilterValue('Complete') }}>Completed</button>
+            <div className="Section">
+            <div className="Filter">
+                <button className={'FilterButton ' + (filterValue === 'All' && 'active' )} onClick={() => { setFilterValue('All') }}>All</button>
+                <button className={'FilterButton ' + (filterValue === 'Incomplete' && 'active' )} onClick={() => { setFilterValue('Incomplete') }}>Incomplete</button>
+                <button className={'FilterButton ' + (filterValue === 'Complete' && 'active' )} onClick={() => { setFilterValue('Complete') }}>Completed</button>
             </div>
-            <div>
-                <label> Sort by Create time
+            <div className="Sort">
+                <label> Sort by Create time 
                     <select value={sortType} onChange={(e) => setSortType(e.target.value)}>
                         <option value="ASC">Ascending</option>
                         <option value="DES">Descending</option>
                     </select>
                 </label>
+            </div>
             </div>
             <TaskList tasks={filteredTask} updateTask={updateTask} deleteTask={deleteTask} />
         </div>
