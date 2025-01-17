@@ -35,13 +35,13 @@ The application is deployed and can be accessed at: https://taskmanager987.netli
 
  ## Thought Process
  
- State Management: Tasks are managed using React's useState and updated dynamically on user actions.
- Component Design: Modular components ensure reusability and maintainability.
- Routing: React Router is used to navigate between the Home Page and Task Detail Page.
- Responsiveness: CSS ensures the app works seamlessly across devices.
- Code Quality: PropTypes validates props to prevent runtime errors.
+ 1. State Management: Tasks are managed using React's useState and updated dynamically on user actions.
+ 2. Component Design: Modular components ensure reusability and maintainability.
+ 3. Routing: React Router is used to navigate between the Home Page and Task Detail Page.
+ 4. Responsiveness: CSS ensures the app works seamlessly across devices.
+ 5. Code Quality: PropTypes validates props to prevent runtime errors.
 
-In the project directory, you can run:
+## In the project directory, you can run:
 
 ### `npm start`
 
